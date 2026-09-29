@@ -10,6 +10,8 @@
 
 #include "Player.h"
 
+#include "src/Graphics/Shape.h"
+
 // Helper function to read .vert and .frag text files
 std::string loadShaderSource(const char* filePath) {
     std::ifstream file(filePath);
@@ -88,6 +90,7 @@ int main()
     //------------------------------------------------------//
 
     playerObject = new Player(0.2f, 0, 0);
+    Shape* mySq = new Shape();
 
     //MAIN LOOP
     while (!glfwWindowShouldClose(window))
@@ -100,6 +103,7 @@ int main()
         glClear(GL_COLOR_BUFFER_BIT);
 
         playerObject->draw(shaderProgram);
+        mySq->draw(shaderProgram, Vector3(0, 1, 0), Vector3(0, 0, 0));
 
         //check and call for buffer swap
         glfwSwapBuffers(window);

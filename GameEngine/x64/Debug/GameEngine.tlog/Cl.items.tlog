@@ -2,3 +2,5 @@ C:\Users\tjazs\source\repos\GameEngine\GameEngine\glad.c;C:\Users\tjazs\source\r
 C:\Users\tjazs\source\repos\GameEngine\GameEngine\main.cpp;C:\Users\tjazs\source\repos\GameEngine\GameEngine\x64\Debug\main.obj
 C:\Users\tjazs\source\repos\GameEngine\GameEngine\Player.cpp;C:\Users\tjazs\source\repos\GameEngine\GameEngine\x64\Debug\Player.obj
 C:\Users\tjazs\source\repos\GameEngine\GameEngine\src\Core\Transform.cpp;C:\Users\tjazs\source\repos\GameEngine\GameEngine\x64\Debug\Transform.obj
+C:\Users\tjazs\source\repos\GameEngine\GameEngine\src\Core\Vector3.cpp;C:\Users\tjazs\source\repos\GameEngine\GameEngine\x64\Debug\Vector3.obj
+C:\Users\tjazs\source\repos\GameEngine\GameEngine\src\Graphics\Square.cpp;C:\Users\tjazs\source\repos\GameEngine\GameEngine\x64\Debug\Square.obj

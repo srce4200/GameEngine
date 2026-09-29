@@ -23,12 +23,15 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="src\Core\Transform.cpp" />
+    <ClCompile Include="src\Core\Vector3.cpp" />
+    <ClCompile Include="src\Graphics\Shape.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h" />
     <ClInclude Include="src\Aris.h" />
     <ClInclude Include="src\Core\Transform.h" />
     <ClInclude Include="src\Core\Vector3.h" />
+    <ClInclude Include="src\Graphics\Shape.h" />
     <ClInclude Include="src\Physics\Rigidbody2D.h" />
   </ItemGroup>
   <ItemGroup>
