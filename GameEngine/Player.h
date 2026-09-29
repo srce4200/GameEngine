@@ -2,14 +2,14 @@
 
 #include <glad/glad.h>
 #include <cmath>
+#include "src/Aris.h"
 
 struct  Player
 {
 private:
 	unsigned int VAO, VBO;
 public:
-	float x, y;
-	float zRotation;
+	Transform transform;
 	float speed;
 	
 	Player(float startX, float startY, float rotZ);

@@ -1,7 +1,0 @@
-﻿  Player.cpp
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\shared\minwindef.h(130,9): warning C4005: 'APIENTRY': macro redefinition
-  (compiling source file 'Player.cpp')
-      C:\VSLibrary\include\glad\glad.h(32,9):
-      see previous definition of 'APIENTRY'
-  
-  GameEngine.vcxproj -> C:\Users\tjazs\source\repos\GameEngine\x64\Debug\GameEngine.exe
