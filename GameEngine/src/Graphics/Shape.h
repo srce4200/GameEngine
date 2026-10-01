@@ -7,9 +7,9 @@
 struct Shape {
 public:
 	void draw(unsigned int shaderProgram, Vector3 position, Vector3 rotation);
-	Shape();
+	Shape(const float* firstVertical, size_t arraySize);
+	~Shape();
 private:
 	unsigned int VAO, VBO;
 	int numOfVert;
-	~Shape();
 };

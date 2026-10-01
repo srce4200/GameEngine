@@ -1,24 +1,16 @@
 
 #include "Shape.h"
+#include <iostream>
 
-Shape::Shape() {
-	float verticals[] = {
-      -0.1f, 0.1f, 0.0f,  // Top-left
-      0.1f, 0.1f, 0.0f,  // Top-right
-      -0.1f, -0.1f, 0.0f,   // Bottom-left
-
-     -0.1f, -0.1f, 0.0f,  // Bottom-left
-      0.1f, 0.1f, 0.0f,  // Top-right
-      0.1f, -0.1f, 0.0f  // Bottom-right
-	};
-    numOfVert = sizeof(verticals) / 3;
-
+Shape::Shape(const float* firstVertical, size_t arraySize) {
+    numOfVert = (arraySize / sizeof(float)) /3;
+    std::cout << numOfVert;
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
 
     glBindVertexArray(VAO);
     glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(verticals), verticals, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, arraySize, firstVertical, GL_STATIC_DRAW);
 
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
