@@ -1,10 +1,10 @@
 
 #include "Shape.h"
 #include <iostream>
-
+int rotationZ;
+int offsetXnY;
 Shape::Shape(const float* firstVertical, size_t arraySize) {
     numOfVert = (arraySize / sizeof(float)) /3;
-    std::cout << numOfVert;
     glGenVertexArrays(1, &VAO);
     glGenBuffers(1, &VBO);
 
@@ -23,6 +23,7 @@ Shape::~Shape() {
     glDeleteBuffers(1, &VBO);
 }
 void Shape::draw(unsigned int shaderProgram, Vector3 position, Vector3 rotation) {
+    
     glUseProgram(shaderProgram);
 
     int offsetXnY = glGetUniformLocation(shaderProgram, "uOffset");
